@@ -16,7 +16,8 @@ class Aco
 	int size;// Graph size
 	int weight;// Shortest path weight(length) 
 	int *path;// Shortest path
-	float **pheromone;// Pheromone array used to calculate probability that ant can go to another city
+	float **pheromone;// Pheromone array is the same matrix as graph but instead of weights between vertexes there is pheromone wihich ants putting down.
+					  // It is using to calculate probability that ant can go to another city
 	int antsSize; // Ants amount
 	Ant **ants;// Ants which will try to find path
 	int antPheromone;// One ant pheromone
